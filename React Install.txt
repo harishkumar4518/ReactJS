@@ -1,0 +1,77 @@
+Step 1:
+cmd> npm 
+Press Enter
+
+Step 2:
+//Install Init
+cmd> npm init
+name:(React JS) "enter any name"
+
+Step 3:
+//Install Webpack Package
+cmd> npm install webpack webpack-dev-server webpack-cli --save
+
+Step 4:
+//Install React DOM
+cmd> npm install react react-dom --save
+
+Step 5:
+//Install Babael Package
+cmd> npm install babel-core babel-loader babel-preset-env babel-preset-react html-webpack-plugin --save-dev
+cmd> npm install babel-loader@8.0.0-beta.0 @babel/core @babel/preset-env webpack
+
+Step 6:
+//Create Files
+cmd>type nul > index.html
+cmd>type nul > App.js
+cmd>type nul > main.js
+cmd>type nul > webpack.config.js
+cmd>type nul > .babelrc
+
+Step 7:
+//Set Compiler, Server and Loaders
+ ADD THIS CONTENT TO IT:
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+module.exports = {
+   entry: './main.js',
+   output: {
+      path: path.join(__dirname, '/bundle'),
+      filename: 'index_bundle.js'
+   },
+   devServer: {
+      inline: true,
+      port: 8080
+   },
+   module: {
+      rules: [
+         {
+            test: /\.jsx?$/,
+            exclude: /node_modules/,
+            loader: 'babel-loader',
+            query: {
+               presets: ['@babel/preset-env', '@babel/preset-react']
+            }
+         }
+      ]
+   },
+   plugins:[
+      new HtmlWebpackPlugin({
+         template: './index.html'
+      })
+   ]
+}
+
+
+Step 8:
+//Change the  script object in Package.json file
+"ADD THIS IN SCRIPT OBJECT"
+"start": "webpack-dev-server --mode development --open --hot",
+"build": "webpack --mode production"
+
+Step 9:
+ADD THIS TO BABELRC
+{
+    "presets":["@babel/preset-env", "@babel/preset-react"]
+}
