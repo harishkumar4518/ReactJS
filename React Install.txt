@@ -1,0 +1,20 @@
+Step 1:
+cmd> npm 
+Press Enter
+
+Step 2:
+Install Init
+//cmd> npm init
+name:(React JS) "enter any name"
+
+Step 3:
+//Install Webpack Package
+cmd> npm install webpack webpack-dev-server --save-dev
+
+Step 4:
+//Install React DOM
+cmd> npm install react react-dom --save
+
+Step 5:
+//Install Babael Package
+cmd> npm install babel-core babel-loder babel-present-es2015 babel-present-react --save-dev
