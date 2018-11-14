@@ -75,3 +75,5 @@ ADD THIS TO BABELRC
 {
     "presets":["@babel/preset-env", "@babel/preset-react"]
 }
+Step 10:
+ npm install --save-dev @babel/preset-react
