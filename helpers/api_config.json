@@ -1,0 +1,67 @@
+{
+  "localdev": {
+    "API_BASE_URL": "http://bv-s152:7072/integra/ips",
+    "iAuthor_Base_URL": "https://integra-iauthor-dev-nsp.azurewebsites.net/editor?docid=",
+    "initializeIAuthor": "https://integra-iauthor-dev-nsp.azurewebsites.net/fileoperation/initialize_iAuthor",
+    "XmlToBits":"https://integra-iauthor-dev-nsp.azurewebsites.net/fileoperation/GetBytesArray",
+    "PagenationCount":50,
+    "Cengage_ERV_Xml":"https://compassqa.cengage.com:4502/erv/vendoredit/item?",
+    "iRightshostname":"localhost"
+  },  
+  "dev": {
+      "API_BASE_URL": "https://integra-ipubsuite-dev-devapi.azurewebsites.net/integra/ips",
+	    "iAuthor_Base_URL": "https://integra-iauthor-dev-nsp.azurewebsites.net/editor?docid=",
+      "initializeIAuthor": "https://integra-iauthor-dev-nsp.azurewebsites.net/fileoperation/initialize_iAuthor",
+      "XmlToBits":"https://integra-iauthor-dev-nsp.azurewebsites.net/fileoperation/GetBytesArray",
+      "PagenationCount":50,
+      "Cengage_ERV_Xml":"https://compassqa.cengage.com:4502/erv/vendoredit/item?",
+      "iRightshostname":"dev-irights.integra.co.in"
+      
+    },
+
+    "test": {
+      "API_BASE_URL": "https://integra-ipubsuite-testapi.azurewebsites.net/integra/ips",
+      "iAuthor_Base_URL": "https://test-iauthor.integra.co.in/editor?docid=",
+      "initializeIAuthor": "https://test-iauthor.integra.co.in/fileoperation/initialize_iAuthor",
+      "XmlToBits":"https://test-iauthor.integra.co.in/fileoperation/GetBytesArray",
+      "PagenationCount":50,
+      "Cengage_ERV_Xml":"https://compassqa.cengage.com:4502/erv/vendoredit/item?",
+      "iRightshostname":"test-irights.integra.co.in"
+    },
+    "testreg": {
+      "API_BASE_URL": "https://integra-ipubsuite-dev-testregapi.azurewebsites.net/integra/ips",
+      "iAuthor_Base_URL": "https://integra-iauthor-dev-nsp.azurewebsites.net/editor?docid=",
+      "initializeIAuthor": "https://integra-iauthor-dev-nsp.azurewebsites.net/fileoperation/initialize_iAuthor",
+      "XmlToBits":"https://integra-iauthor-dev-nsp.azurewebsites.net/fileoperation/GetBytesArray",
+      "PagenationCount":50,
+      "Cengage_ERV_Xml":"https://compassqa.cengage.com:4502/erv/vendoredit/item?",
+      "iRightshostname":"test-irights.integra.co.in"
+    },
+    "demo": {
+      "API_BASE_URL": "https://integra-ipubsuite-demoapi.azurewebsites.net/integra/ips",
+      "iAuthor_Base_URL": "https://demo-iauthor.integra.co.in/editor?docid=",
+      "initializeIAuthor": "https://demo-iauthor.integra.co.in/fileoperation/initialize_iAuthor",
+      "XmlToBits":"https://demo-iauthor.integra.co.in/fileoperation/GetBytesArray",
+      "iRightshostname":"demo-irights.integra.co.in",
+      "PagenationCount":50,
+      "Cengage_ERV_Xml":"https://compassqa.cengage.com:4502/erv/vendoredit/item?"
+    },
+    "prod": {
+      "API_BASE_URL": "https://ipubsuiteapi.integra.co.in/integra/ips",
+      "iAuthor_Base_URL": "https://iauthor.integra.co.in/editor?docid=",
+      "initializeIAuthor": "https://iauthor.integra.co.in/fileoperation/initialize_iAuthor",
+      "XmlToBits":"https://iauthor.integra.co.in/fileoperation/GetBytesArray",
+      "PagenationCount":100,
+      "Cengage_ERV_Xml":"https://compassprod.cengage.com:4502/erv/vendoredit/item?",
+      "iRightshostname":"irights.integra.co.in"
+    },
+    "vapt": {
+      "API_BASE_URL": "https://integra-ipubsuite-dev-testregapi.azurewebsites.net/integra/ips",
+      "iAuthor_Base_URL": "https://demo-iauthor.integra.co.in/editor?docid=",
+      "initializeIAuthor": "https://demo-iauthor.integra.co.in/fileoperation/initialize_iAuthor",
+      "XmlToBits":"https://demo-iauthor.integra.co.in/fileoperation/GetBytesArray",
+      "iRightshostname":"integra-ipubsuite-dev-irights-vapt.azurewebsites.net",
+      "PagenationCount":50,
+      "Cengage_ERV_Xml":"https://compassqa.cengage.com:4502/erv/vendoredit/item?"
+    }
+  }
